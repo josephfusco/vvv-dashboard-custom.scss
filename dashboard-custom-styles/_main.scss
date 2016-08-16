@@ -1,0 +1,198 @@
+// -----------------------------------------------------------------------------
+// Main
+// -----------------------------------------------------------------------------
+
+body {
+	padding-top: 0;
+	font-family: $font-stack;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #0069ff;
+}
+
+#wrapper.toggled .main {
+	max-width: 1170px;
+	margin: 0 auto;
+	float: none;
+}
+
+.navbar-inverse {
+	background-color: $white;
+	border-color: $white;
+
+	.navbar-nav > li > a {
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		&:hover, &:focus {
+			color: $blue;
+		}
+	}
+
+	.navbar-brand {
+		padding: 20px 20px;
+
+		&:hover, &:focus {
+			color: $blue;
+		}
+	}
+}
+
+.navbar-fixed-top {
+	position: relative;
+}
+
+.sites {
+	display: table;
+	overflow-y: visible;
+
+	tbody > tr > td {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+
+.ui-sortable-handle .ui-sortable-helper {
+	box-shadow: 0 -1px 0 #E0E0E0;
+}
+
+.table-bordered {
+	border: 0;
+
+	> tbody > tr {
+		border-top: 2px solid #f1f1f1;
+
+		&:hover {
+
+			td {
+				background-color: transparent;
+			}
+		}
+
+		> td {
+			border: 0;
+			white-space: nowrap;
+			background-color: $white;
+			//box-shadow: 0 1px 0 #E0E0E0;
+			//transform: translateZ(0);
+		}
+	}
+}
+
+.table > thead > tr > th {
+	border: 0;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: transparent;
+}
+
+.form-control {
+	height: 50px;
+	padding: 0 .85rem;
+}
+
+#menu-toggle {
+	padding: 10px 25px;
+	font-weight: 600;
+	font-size: 14px;
+	background-color: $green;
+	color: $white;
+	border-color: $green;
+}
+
+.sidebar {
+	background-color: $white;
+	border: 0;
+	position: absolute;
+
+	.btn {
+		padding: 10px 20px;
+		font-weight: 600;
+		font-size: 14px;
+		background-color: $green;
+		color: $white;
+		border-color: $green;
+	}
+
+	.nav {
+
+		li {
+
+			a {
+				padding-left: 0;
+
+				&:hover, &:focus {
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+
+.sidebar-title {
+	margin-left: 0;
+	font-weight: 400;
+}
+
+input[type="checkbox"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+	border-color: #0069ff;
+	box-shadow: none;
+}
+
+#search_container {
+	width: 100%;
+
+	input {
+		border: 1px solid #dfdfdf;
+		border-radius: 4px;
+		padding-left: 14px;
+		padding-right: 14px;
+		font-size: 16px;
+	}
+
+	.input-group-addon {
+		display: none;
+	}
+}
+
+.fa-inverse {
+	color: $black !important;
+}
+
+.wp-debug-log, .error_logs {
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+	background-color: #f3f3f3;
+	border: 1px solid #E0E0E0;
+}
+
+.time {
+	color: #555;
+}
+
+.line {
+	color: #444;
+}
+
+.in-file {
+	color: #999;
+}
+
+.error-type {
+	color: #666;
+}
